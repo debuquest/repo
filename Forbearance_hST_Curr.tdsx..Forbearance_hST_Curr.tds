@@ -1,0 +1,4189 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0626.1424                               -->
+<datasource formatted-name='federated.1rhrjze00j1w0d133w2w90o8lcvl' inline='true' source-platform='win' version='18.1' xml:base='https://bbttabdev.bbtnet.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location derived-from='/datasources/Forbearance_hST_Curr?rev=1.0' id='Forbearance_hST_Curr' path='/t/DEV_Mortgage/datasources' revision='1.0' site='DEV_Mortgage' />
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='Forbearance_hST_Curr' name='textscan.1prfts00acaaou148pun31dniv16'>
+        <connection class='textscan' directory='//p1h-nas-06a.bbtnet.com/mortgage/LOB/MLBusDel/DataShare/HST-Output' filename='Forbearance_hST_Curr.txt' server='' workgroup-auth-mode='as-is' />
+      </named-connection>
+    </named-connections>
+    <relation connection='textscan.1prfts00acaaou148pun31dniv16' name='Forbearance_hST_Curr.txt' table='[Forbearance_hST_Curr#txt]' type='table'>
+      <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+        <column datatype='date' name='AS_OF_DT' ordinal='0' />
+        <column datatype='integer' name='LN_NO' ordinal='1' />
+        <column datatype='string' name='LEGACY_COMPANY' ordinal='2' />
+        <column datatype='string' name='ACCOMODATION_TYPE' ordinal='3' />
+        <column datatype='date' name='DFCRD6_DT' ordinal='4' />
+        <column datatype='date' name='DFCRN6_DT' ordinal='5' />
+        <column datatype='date' name='DFCRND_DT' ordinal='6' />
+        <column datatype='date' name='DFCORN_DT' ordinal='7' />
+        <column datatype='date' name='INITIAL_REQ_DT' ordinal='8' />
+        <column datatype='string' name='CURR_COMM_CD' ordinal='9' />
+        <column datatype='string' name='CURR_REQ_TY' ordinal='10' />
+        <column datatype='string' name='CURR_REQ_CHNL' ordinal='11' />
+        <column datatype='date' name='CURR_REQ_DT' ordinal='12' />
+        <column datatype='date' name='CFBREJ_DT' ordinal='13' />
+        <column datatype='string' name='INVESTOR_GROUP' ordinal='14' />
+        <column datatype='real' name='LN_1ST_PRIN_BA' ordinal='15' />
+        <column datatype='string' name='DEL_BUCKET' ordinal='16' />
+        <column datatype='string' name='FC_STATUS' ordinal='17' />
+        <column datatype='string' name='BK_STATUS' ordinal='18' />
+        <column datatype='string' name='DPD_BUCKET' ordinal='19' />
+        <column datatype='string' name='LM_STATUS_CD' ordinal='20' />
+        <column datatype='date' name='LM_STATUS_CHG_DT' ordinal='21' />
+        <column datatype='date' name='LM_SET_UP_DT' ordinal='22' />
+        <column datatype='string' name='FB_PLAN_STATUS' ordinal='23' />
+        <column datatype='date' name='FP_CREAT_DT' ordinal='24' />
+        <column datatype='date' name='FP_STAT_DT' ordinal='25' />
+        <column datatype='string' name='FP_BROKEN_DT' ordinal='26' />
+        <column datatype='integer' name='FP_PROMISE_QT' ordinal='27' />
+        <column datatype='date' name='FP_FST_PR_DU_DT' ordinal='28' />
+        <column datatype='date' name='FP_LST_PR_DU_DT' ordinal='29' />
+        <column datatype='date' name='FP_NXT_PR_DU_DT' ordinal='30' />
+        <column datatype='integer' name='FP_NXT_PR_DU_NO' ordinal='31' />
+        <column datatype='date' name='FP_OG_END_DT' ordinal='32' />
+        <column datatype='date' name='FP_OG_FROM_DT' ordinal='33' />
+        <column datatype='date' name='FP_OG_TO_DT' ordinal='34' />
+        <column datatype='string' name='LTR_ID' ordinal='35' />
+        <column datatype='date' name='LTR_DT' ordinal='36' />
+        <column datatype='string' name='ACCRUAL_STATUS' ordinal='37' />
+        <column datatype='string' name='PR_ALPHA_STATE_CD' ordinal='38' />
+        <column datatype='integer' name='PR_ZIP_CD' ordinal='39' />
+        <column datatype='string' name='PR_CITY_2_NM' ordinal='40' />
+        <column datatype='date' name='LN_NXT_PMT_DUE_DT' ordinal='41' />
+        <column datatype='string' name='IV_ID' ordinal='42' />
+        <column datatype='string' name='IV_NM' ordinal='43' />
+        <column datatype='string' name='ACC_DPD_BUCKET' ordinal='44' />
+        <column datatype='string' name='ACC_DPD_BUCKET_2' ordinal='45' />
+        <column datatype='string' name='FB_PLAN_LST_M' ordinal='46' />
+        <column datatype='string' name='ASSISTANCE_STAGE' ordinal='47' />
+        <column datatype='string' name='FIRSTCONTACT' ordinal='48' />
+        <column datatype='string' name='LONG_COMM_CD' ordinal='49' />
+        <column datatype='string' name='COMMENT_CD_ONLINE' ordinal='50' />
+        <column datatype='date' name='COMMENT_DT_ONLINE' ordinal='51' />
+        <column datatype='string' name='COMMENT_CD_CALL' ordinal='52' />
+        <column datatype='date' name='COMMENT_DT_CALL' ordinal='53' />
+        <column datatype='string' name='FB_REQ_SOURCE' ordinal='54' />
+        <column datatype='real' name='Curr_LTV' ordinal='55' />
+        <column datatype='string' name='Curr_LTV_Band' ordinal='56' />
+        <column datatype='integer' name='Vintage' ordinal='57' />
+        <column datatype='datetime' name='Close_Dt' ordinal='58' />
+        <column datatype='integer' name='Curr_FICO' ordinal='59' />
+        <column datatype='string' name='Curr_FICO_Band' ordinal='60' />
+        <column datatype='integer' name='FIRST_TIME_HOME_BUYER' ordinal='61' />
+        <column datatype='integer' name='Self_Emp_Flag' ordinal='62' />
+        <column datatype='string' name='Occupation' ordinal='63' />
+        <column datatype='real' name='Income' ordinal='64' />
+        <column datatype='real' name='ASSET' ordinal='65' />
+        <column datatype='real' name='PITI' ordinal='66' />
+        <column datatype='string' name='Product2' ordinal='67' />
+        <column datatype='string' name='HHL_GRP' ordinal='68' />
+        <column datatype='string' name='Origination_Channel' ordinal='69' />
+        <column datatype='string' name='Loan_Purpose' ordinal='70' />
+        <column datatype='integer' name='CBSA_NoDiv' ordinal='71' />
+        <column datatype='date' name='LN_PIF_DT' ordinal='72' />
+        <column datatype='date' name='LN_MATURES_DT' ordinal='73' />
+        <column datatype='string' name='Disaster_Dt_Dlq_Status' ordinal='74' />
+        <column datatype='string' name='Accomodation_Granted' ordinal='75' />
+        <column datatype='string' name='BO_BORR_FST_NM' ordinal='76' />
+        <column datatype='string' name='BO_BORR_LAST_NM' ordinal='77' />
+        <column datatype='string' name='BO_BORR_MDL_NM' ordinal='78' />
+        <column datatype='string' name='TSK_ID' ordinal='79' />
+        <column datatype='date' name='TSK_START_DT' ordinal='80' />
+        <column datatype='date' name='TSK_ACT_CLOSE_DT' ordinal='81' />
+        <column datatype='string' name='TSK_CONT_ID' ordinal='82' />
+        <column datatype='date' name='DFREIN_Dt' ordinal='83' />
+        <column datatype='date' name='DFCRX3_Dt' ordinal='84' />
+        <column datatype='string' name='DFCRX6_Dt' ordinal='85' />
+        <column datatype='date' name='LMRCRN_Dt' ordinal='86' />
+        <column datatype='date' name='LMFB01_Dt' ordinal='87' />
+        <column datatype='string' name='LMFB02_Dt' ordinal='88' />
+        <column datatype='date' name='LMFB03_Dt' ordinal='89' />
+        <column datatype='date' name='LMFB04_Dt' ordinal='90' />
+        <column datatype='date' name='HPNC01_DT' ordinal='91' />
+        <column datatype='date' name='HPNC02_DT' ordinal='92' />
+        <column datatype='date' name='HPNC03_DT' ordinal='93' />
+        <column datatype='date' name='HPCM01_DT' ordinal='94' />
+        <column datatype='date' name='HPCM02_DT' ordinal='95' />
+        <column datatype='date' name='HPCM03_DT' ordinal='96' />
+        <column datatype='date' name='DFCURR_DT' ordinal='97' />
+        <column datatype='date' name='DFDELQ_DT' ordinal='98' />
+        <column datatype='date' name='CRNAE3_DT' ordinal='99' />
+        <column datatype='date' name='CSSLCA_DT' ordinal='100' />
+        <column datatype='date' name='DISLTM_DT' ordinal='101' />
+        <column datatype='date' name='DISMAN_DT' ordinal='102' />
+        <column datatype='date' name='OCCOW_DT' ordinal='103' />
+        <column datatype='date' name='OCCTN_DT' ordinal='104' />
+        <column datatype='date' name='OCCVC_DT' ordinal='105' />
+        <column datatype='string' name='PRMNOW_DT' ordinal='106' />
+        <column datatype='string' name='REJDEF_DT' ordinal='107' />
+        <column datatype='date' name='RPPCRN_DT' ordinal='108' />
+        <column datatype='date' name='RS385_DT' ordinal='109' />
+        <column datatype='date' name='SL385_DT' ordinal='110' />
+        <column datatype='string' name='CFBREJ_ID' ordinal='111' />
+        <column datatype='string' name='DFCRD6_ID' ordinal='112' />
+        <column datatype='string' name='DFCRN6_ID' ordinal='113' />
+        <column datatype='string' name='DFCRND_ID' ordinal='114' />
+        <column datatype='string' name='DFCORN_ID' ordinal='115' />
+        <column datatype='string' name='DFREIN_ID' ordinal='116' />
+        <column datatype='string' name='DFCRX3_ID' ordinal='117' />
+        <column datatype='string' name='DFCRX6_ID' ordinal='118' />
+        <column datatype='string' name='HPNC01_ID' ordinal='119' />
+        <column datatype='string' name='HPNC02_ID' ordinal='120' />
+        <column datatype='string' name='HPNC03_ID' ordinal='121' />
+        <column datatype='string' name='HPCM01_ID' ordinal='122' />
+        <column datatype='string' name='HPCM02_ID' ordinal='123' />
+        <column datatype='string' name='HPCM03_ID' ordinal='124' />
+        <column datatype='string' name='LMFB03_ID' ordinal='125' />
+        <column datatype='string' name='LMRCRN_ID' ordinal='126' />
+        <column datatype='string' name='RPPCRN_ID' ordinal='127' />
+        <column datatype='integer' name='Extension_Count' ordinal='128' />
+        <column datatype='integer' name='Nbr_Months_Of_FB' ordinal='129' />
+        <column datatype='integer' name='Nbr_Months_Remaining_On_FB' ordinal='130' />
+        <column datatype='integer' name='TOTAL_MONTHS_ON_FB' ordinal='131' />
+        <column datatype='datetime' name='SYS_INS_DT' ordinal='132' />
+        <column datatype='string' name='SYS_UPD_DT' ordinal='133' />
+        <column datatype='string' name='SYS_DEL_DT' ordinal='134' />
+        <column datatype='string' name='CVFCMP_DT' ordinal='135' />
+        <column datatype='string' name='LMCF12_DT' ordinal='136' />
+        <column datatype='string' name='LMCFT9_DT' ordinal='137' />
+        <column datatype='string' name='CVFNEC_DT' ordinal='138' />
+        <column datatype='string' name='DFCRPF_DT' ordinal='139' />
+        <column datatype='string' name='LMCFEX_DT' ordinal='140' />
+        <column datatype='string' name='LMCFT6_DT' ordinal='141' />
+        <column datatype='string' name='LMFBAE_DT' ordinal='142' />
+        <column datatype='string' name='LMMDRW_DT' ordinal='143' />
+        <column datatype='string' name='NDPDPS_DT' ordinal='144' />
+        <column datatype='date' name='NDPDFS_DT' ordinal='145' />
+        <column datatype='date' name='DFCRCN_DT' ordinal='146' />
+      </columns>
+    </relation>
+    <metadata-records>
+      <metadata-record class='capability'>
+        <remote-name />
+        <remote-type>0</remote-type>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias />
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+          <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+          <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+          <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+          <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+          <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>AS_OF_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[AS_OF_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>AS_OF_DT</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LN_NO</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[LN_NO]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LN_NO</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LEGACY_COMPANY</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LEGACY_COMPANY]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LEGACY_COMPANY</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>ACCOMODATION_TYPE</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[ACCOMODATION_TYPE]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>ACCOMODATION_TYPE</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRD6_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFCRD6_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRD6_DT</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRN6_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFCRN6_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRN6_DT</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRND_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFCRND_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRND_DT</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCORN_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFCORN_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCORN_DT</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>INITIAL_REQ_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[INITIAL_REQ_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>INITIAL_REQ_DT</remote-alias>
+        <ordinal>8</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CURR_COMM_CD</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CURR_COMM_CD]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CURR_COMM_CD</remote-alias>
+        <ordinal>9</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CURR_REQ_TY</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CURR_REQ_TY]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CURR_REQ_TY</remote-alias>
+        <ordinal>10</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CURR_REQ_CHNL</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CURR_REQ_CHNL]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CURR_REQ_CHNL</remote-alias>
+        <ordinal>11</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CURR_REQ_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[CURR_REQ_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CURR_REQ_DT</remote-alias>
+        <ordinal>12</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CFBREJ_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[CFBREJ_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CFBREJ_DT</remote-alias>
+        <ordinal>13</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>INVESTOR_GROUP</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[INVESTOR_GROUP]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>INVESTOR_GROUP</remote-alias>
+        <ordinal>14</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LN_1ST_PRIN_BA</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[LN_1ST_PRIN_BA]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LN_1ST_PRIN_BA</remote-alias>
+        <ordinal>15</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DEL_BUCKET</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DEL_BUCKET]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DEL_BUCKET</remote-alias>
+        <ordinal>16</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FC_STATUS</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[FC_STATUS]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FC_STATUS</remote-alias>
+        <ordinal>17</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>BK_STATUS</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[BK_STATUS]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>BK_STATUS</remote-alias>
+        <ordinal>18</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DPD_BUCKET</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DPD_BUCKET]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DPD_BUCKET</remote-alias>
+        <ordinal>19</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LM_STATUS_CD</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LM_STATUS_CD]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LM_STATUS_CD</remote-alias>
+        <ordinal>20</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LM_STATUS_CHG_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LM_STATUS_CHG_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LM_STATUS_CHG_DT</remote-alias>
+        <ordinal>21</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LM_SET_UP_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LM_SET_UP_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LM_SET_UP_DT</remote-alias>
+        <ordinal>22</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FB_PLAN_STATUS</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[FB_PLAN_STATUS]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FB_PLAN_STATUS</remote-alias>
+        <ordinal>23</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_CREAT_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[FP_CREAT_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_CREAT_DT</remote-alias>
+        <ordinal>24</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_STAT_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[FP_STAT_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_STAT_DT</remote-alias>
+        <ordinal>25</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_BROKEN_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[FP_BROKEN_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_BROKEN_DT</remote-alias>
+        <ordinal>26</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_PROMISE_QT</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[FP_PROMISE_QT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_PROMISE_QT</remote-alias>
+        <ordinal>27</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_FST_PR_DU_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[FP_FST_PR_DU_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_FST_PR_DU_DT</remote-alias>
+        <ordinal>28</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_LST_PR_DU_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[FP_LST_PR_DU_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_LST_PR_DU_DT</remote-alias>
+        <ordinal>29</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_NXT_PR_DU_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[FP_NXT_PR_DU_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_NXT_PR_DU_DT</remote-alias>
+        <ordinal>30</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_NXT_PR_DU_NO</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[FP_NXT_PR_DU_NO]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_NXT_PR_DU_NO</remote-alias>
+        <ordinal>31</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_OG_END_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[FP_OG_END_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_OG_END_DT</remote-alias>
+        <ordinal>32</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_OG_FROM_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[FP_OG_FROM_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_OG_FROM_DT</remote-alias>
+        <ordinal>33</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FP_OG_TO_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[FP_OG_TO_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FP_OG_TO_DT</remote-alias>
+        <ordinal>34</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LTR_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LTR_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LTR_ID</remote-alias>
+        <ordinal>35</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LTR_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LTR_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LTR_DT</remote-alias>
+        <ordinal>36</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>ACCRUAL_STATUS</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[ACCRUAL_STATUS]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>ACCRUAL_STATUS</remote-alias>
+        <ordinal>37</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>PR_ALPHA_STATE_CD</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[PR_ALPHA_STATE_CD]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>PR_ALPHA_STATE_CD</remote-alias>
+        <ordinal>38</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>PR_ZIP_CD</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[PR_ZIP_CD]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>PR_ZIP_CD</remote-alias>
+        <ordinal>39</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>PR_CITY_2_NM</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[PR_CITY_2_NM]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>PR_CITY_2_NM</remote-alias>
+        <ordinal>40</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LN_NXT_PMT_DUE_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LN_NXT_PMT_DUE_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LN_NXT_PMT_DUE_DT</remote-alias>
+        <ordinal>41</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>IV_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[IV_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>IV_ID</remote-alias>
+        <ordinal>42</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>IV_NM</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[IV_NM]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>IV_NM</remote-alias>
+        <ordinal>43</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>ACC_DPD_BUCKET</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[ACC_DPD_BUCKET]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>ACC_DPD_BUCKET</remote-alias>
+        <ordinal>44</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>ACC_DPD_BUCKET_2</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[ACC_DPD_BUCKET_2]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>ACC_DPD_BUCKET_2</remote-alias>
+        <ordinal>45</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FB_PLAN_LST_M</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[FB_PLAN_LST_M]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FB_PLAN_LST_M</remote-alias>
+        <ordinal>46</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>ASSISTANCE_STAGE</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[ASSISTANCE_STAGE]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>ASSISTANCE_STAGE</remote-alias>
+        <ordinal>47</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FIRSTCONTACT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[FIRSTCONTACT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FIRSTCONTACT</remote-alias>
+        <ordinal>48</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LONG_COMM_CD</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LONG_COMM_CD]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LONG_COMM_CD</remote-alias>
+        <ordinal>49</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>COMMENT_CD_ONLINE</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[COMMENT_CD_ONLINE]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>COMMENT_CD_ONLINE</remote-alias>
+        <ordinal>50</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>COMMENT_DT_ONLINE</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[COMMENT_DT_ONLINE]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>COMMENT_DT_ONLINE</remote-alias>
+        <ordinal>51</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>COMMENT_CD_CALL</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[COMMENT_CD_CALL]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>COMMENT_CD_CALL</remote-alias>
+        <ordinal>52</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>COMMENT_DT_CALL</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[COMMENT_DT_CALL]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>COMMENT_DT_CALL</remote-alias>
+        <ordinal>53</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FB_REQ_SOURCE</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[FB_REQ_SOURCE]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FB_REQ_SOURCE</remote-alias>
+        <ordinal>54</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Curr_LTV</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[Curr_LTV]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Curr_LTV</remote-alias>
+        <ordinal>55</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Curr_LTV_Band</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Curr_LTV_Band]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Curr_LTV_Band</remote-alias>
+        <ordinal>56</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Vintage</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Vintage]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Vintage</remote-alias>
+        <ordinal>57</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Close_Dt</remote-name>
+        <remote-type>135</remote-type>
+        <local-name>[Close_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Close_Dt</remote-alias>
+        <ordinal>58</ordinal>
+        <local-type>datetime</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Curr_FICO</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Curr_FICO]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Curr_FICO</remote-alias>
+        <ordinal>59</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Curr_FICO_Band</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Curr_FICO_Band]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Curr_FICO_Band</remote-alias>
+        <ordinal>60</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FIRST_TIME_HOME_BUYER</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[FIRST_TIME_HOME_BUYER]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>FIRST_TIME_HOME_BUYER</remote-alias>
+        <ordinal>61</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Self_Emp_Flag</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Self_Emp_Flag]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Self_Emp_Flag</remote-alias>
+        <ordinal>62</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Occupation</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Occupation]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Occupation</remote-alias>
+        <ordinal>63</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Income</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[Income]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Income</remote-alias>
+        <ordinal>64</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>ASSET</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[ASSET]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>ASSET</remote-alias>
+        <ordinal>65</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>PITI</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[PITI]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>PITI</remote-alias>
+        <ordinal>66</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Product2</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Product2]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Product2</remote-alias>
+        <ordinal>67</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HHL_GRP</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[HHL_GRP]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HHL_GRP</remote-alias>
+        <ordinal>68</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Origination_Channel</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Origination_Channel]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Origination_Channel</remote-alias>
+        <ordinal>69</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Loan_Purpose</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Loan_Purpose]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Loan_Purpose</remote-alias>
+        <ordinal>70</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CBSA_NoDiv</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[CBSA_NoDiv]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CBSA_NoDiv</remote-alias>
+        <ordinal>71</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LN_PIF_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LN_PIF_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LN_PIF_DT</remote-alias>
+        <ordinal>72</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LN_MATURES_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LN_MATURES_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LN_MATURES_DT</remote-alias>
+        <ordinal>73</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Disaster_Dt_Dlq_Status</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Disaster_Dt_Dlq_Status]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Disaster_Dt_Dlq_Status</remote-alias>
+        <ordinal>74</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Accomodation_Granted</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Accomodation_Granted]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Accomodation_Granted</remote-alias>
+        <ordinal>75</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>BO_BORR_FST_NM</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[BO_BORR_FST_NM]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>BO_BORR_FST_NM</remote-alias>
+        <ordinal>76</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>BO_BORR_LAST_NM</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[BO_BORR_LAST_NM]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>BO_BORR_LAST_NM</remote-alias>
+        <ordinal>77</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>BO_BORR_MDL_NM</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[BO_BORR_MDL_NM]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>BO_BORR_MDL_NM</remote-alias>
+        <ordinal>78</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>TSK_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[TSK_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>TSK_ID</remote-alias>
+        <ordinal>79</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>TSK_START_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[TSK_START_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>TSK_START_DT</remote-alias>
+        <ordinal>80</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>TSK_ACT_CLOSE_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[TSK_ACT_CLOSE_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>TSK_ACT_CLOSE_DT</remote-alias>
+        <ordinal>81</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>TSK_CONT_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[TSK_CONT_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>TSK_CONT_ID</remote-alias>
+        <ordinal>82</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFREIN_Dt</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFREIN_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFREIN_Dt</remote-alias>
+        <ordinal>83</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRX3_Dt</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFCRX3_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRX3_Dt</remote-alias>
+        <ordinal>84</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRX6_Dt</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFCRX6_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRX6_Dt</remote-alias>
+        <ordinal>85</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMRCRN_Dt</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LMRCRN_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMRCRN_Dt</remote-alias>
+        <ordinal>86</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMFB01_Dt</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LMFB01_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMFB01_Dt</remote-alias>
+        <ordinal>87</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMFB02_Dt</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMFB02_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMFB02_Dt</remote-alias>
+        <ordinal>88</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMFB03_Dt</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LMFB03_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMFB03_Dt</remote-alias>
+        <ordinal>89</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMFB04_Dt</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[LMFB04_Dt]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMFB04_Dt</remote-alias>
+        <ordinal>90</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPNC01_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[HPNC01_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPNC01_DT</remote-alias>
+        <ordinal>91</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPNC02_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[HPNC02_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPNC02_DT</remote-alias>
+        <ordinal>92</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPNC03_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[HPNC03_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPNC03_DT</remote-alias>
+        <ordinal>93</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPCM01_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[HPCM01_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPCM01_DT</remote-alias>
+        <ordinal>94</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPCM02_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[HPCM02_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPCM02_DT</remote-alias>
+        <ordinal>95</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPCM03_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[HPCM03_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPCM03_DT</remote-alias>
+        <ordinal>96</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCURR_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFCURR_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCURR_DT</remote-alias>
+        <ordinal>97</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFDELQ_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFDELQ_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFDELQ_DT</remote-alias>
+        <ordinal>98</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CRNAE3_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[CRNAE3_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CRNAE3_DT</remote-alias>
+        <ordinal>99</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CSSLCA_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[CSSLCA_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CSSLCA_DT</remote-alias>
+        <ordinal>100</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DISLTM_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DISLTM_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DISLTM_DT</remote-alias>
+        <ordinal>101</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DISMAN_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DISMAN_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DISMAN_DT</remote-alias>
+        <ordinal>102</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>OCCOW_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[OCCOW_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>OCCOW_DT</remote-alias>
+        <ordinal>103</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>OCCTN_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[OCCTN_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>OCCTN_DT</remote-alias>
+        <ordinal>104</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>OCCVC_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[OCCVC_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>OCCVC_DT</remote-alias>
+        <ordinal>105</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>PRMNOW_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[PRMNOW_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>PRMNOW_DT</remote-alias>
+        <ordinal>106</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>REJDEF_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[REJDEF_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>REJDEF_DT</remote-alias>
+        <ordinal>107</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>RPPCRN_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[RPPCRN_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>RPPCRN_DT</remote-alias>
+        <ordinal>108</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>RS385_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[RS385_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>RS385_DT</remote-alias>
+        <ordinal>109</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>SL385_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[SL385_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>SL385_DT</remote-alias>
+        <ordinal>110</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CFBREJ_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CFBREJ_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CFBREJ_ID</remote-alias>
+        <ordinal>111</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRD6_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFCRD6_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRD6_ID</remote-alias>
+        <ordinal>112</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRN6_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFCRN6_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRN6_ID</remote-alias>
+        <ordinal>113</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRND_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFCRND_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRND_ID</remote-alias>
+        <ordinal>114</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCORN_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFCORN_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCORN_ID</remote-alias>
+        <ordinal>115</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFREIN_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFREIN_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFREIN_ID</remote-alias>
+        <ordinal>116</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRX3_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFCRX3_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRX3_ID</remote-alias>
+        <ordinal>117</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRX6_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFCRX6_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRX6_ID</remote-alias>
+        <ordinal>118</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPNC01_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[HPNC01_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPNC01_ID</remote-alias>
+        <ordinal>119</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPNC02_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[HPNC02_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPNC02_ID</remote-alias>
+        <ordinal>120</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPNC03_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[HPNC03_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPNC03_ID</remote-alias>
+        <ordinal>121</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPCM01_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[HPCM01_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPCM01_ID</remote-alias>
+        <ordinal>122</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPCM02_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[HPCM02_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPCM02_ID</remote-alias>
+        <ordinal>123</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>HPCM03_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[HPCM03_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>HPCM03_ID</remote-alias>
+        <ordinal>124</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMFB03_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMFB03_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMFB03_ID</remote-alias>
+        <ordinal>125</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMRCRN_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMRCRN_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMRCRN_ID</remote-alias>
+        <ordinal>126</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>RPPCRN_ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[RPPCRN_ID]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>RPPCRN_ID</remote-alias>
+        <ordinal>127</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Extension_Count</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Extension_Count]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Extension_Count</remote-alias>
+        <ordinal>128</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Nbr_Months_Of_FB</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Nbr_Months_Of_FB]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Nbr_Months_Of_FB</remote-alias>
+        <ordinal>129</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Nbr_Months_Remaining_On_FB</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Nbr_Months_Remaining_On_FB]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>Nbr_Months_Remaining_On_FB</remote-alias>
+        <ordinal>130</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>TOTAL_MONTHS_ON_FB</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[TOTAL_MONTHS_ON_FB]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>TOTAL_MONTHS_ON_FB</remote-alias>
+        <ordinal>131</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>SYS_INS_DT</remote-name>
+        <remote-type>135</remote-type>
+        <local-name>[SYS_INS_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>SYS_INS_DT</remote-alias>
+        <ordinal>132</ordinal>
+        <local-type>datetime</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>SYS_UPD_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[SYS_UPD_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>SYS_UPD_DT</remote-alias>
+        <ordinal>133</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>SYS_DEL_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[SYS_DEL_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>SYS_DEL_DT</remote-alias>
+        <ordinal>134</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CVFCMP_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CVFCMP_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CVFCMP_DT</remote-alias>
+        <ordinal>135</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMCF12_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMCF12_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMCF12_DT</remote-alias>
+        <ordinal>136</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMCFT9_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMCFT9_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMCFT9_DT</remote-alias>
+        <ordinal>137</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CVFNEC_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CVFNEC_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>CVFNEC_DT</remote-alias>
+        <ordinal>138</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRPF_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[DFCRPF_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRPF_DT</remote-alias>
+        <ordinal>139</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMCFEX_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMCFEX_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMCFEX_DT</remote-alias>
+        <ordinal>140</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMCFT6_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMCFT6_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMCFT6_DT</remote-alias>
+        <ordinal>141</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMFBAE_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMFBAE_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMFBAE_DT</remote-alias>
+        <ordinal>142</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LMMDRW_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LMMDRW_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>LMMDRW_DT</remote-alias>
+        <ordinal>143</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>NDPDPS_DT</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[NDPDPS_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>NDPDPS_DT</remote-alias>
+        <ordinal>144</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>NDPDFS_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[NDPDFS_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>NDPDFS_DT</remote-alias>
+        <ordinal>145</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DFCRCN_DT</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[DFCRCN_DT]</local-name>
+        <parent-name>[Forbearance_hST_Curr.txt]</parent-name>
+        <remote-alias>DFCRCN_DT</remote-alias>
+        <ordinal>146</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+      </metadata-record>
+    </metadata-records>
+  </connection>
+  <aliases enabled='yes' />
+  <column caption='Accomodation Type' datatype='string' name='[ACCOMODATION_TYPE]' role='dimension' type='nominal' />
+  <column caption='Accrual Status' datatype='string' name='[ACCRUAL_STATUS]' role='dimension' type='nominal' />
+  <column caption='Acc Dpd Bucket' datatype='string' name='[ACC_DPD_BUCKET]' role='dimension' type='nominal' />
+  <column caption='Acc Dpd Bucket 2' datatype='string' name='[ACC_DPD_BUCKET_2]' role='dimension' type='nominal' />
+  <column caption='Asset' datatype='real' name='[ASSET]' role='measure' type='quantitative' />
+  <column caption='Assistance Stage' datatype='string' name='[ASSISTANCE_STAGE]' role='dimension' type='nominal' />
+  <column caption='As Of Dt' datatype='date' name='[AS_OF_DT]' role='dimension' type='ordinal' />
+  <column caption='Accomodation Granted' datatype='string' name='[Accomodation_Granted]' role='dimension' type='nominal' />
+  <column caption='Bk Status' datatype='string' name='[BK_STATUS]' role='dimension' type='nominal' />
+  <column caption='Bo Borr Fst Nm' datatype='string' name='[BO_BORR_FST_NM]' role='dimension' type='nominal' />
+  <column caption='Bo Borr Last Nm' datatype='string' name='[BO_BORR_LAST_NM]' role='dimension' type='nominal' />
+  <column caption='Bo Borr Mdl Nm' datatype='string' name='[BO_BORR_MDL_NM]' role='dimension' type='nominal' />
+  <column caption='CBSA NoDiv' datatype='integer' name='[CBSA_NoDiv]' role='measure' type='quantitative' />
+  <column caption='Cfbrej Dt' datatype='date' name='[CFBREJ_DT]' role='dimension' type='ordinal' />
+  <column caption='Cfbrej Id' datatype='string' name='[CFBREJ_ID]' role='dimension' type='nominal' />
+  <column caption='Comment Cd Call' datatype='string' name='[COMMENT_CD_CALL]' role='dimension' type='nominal' />
+  <column caption='Comment Cd Online' datatype='string' name='[COMMENT_CD_ONLINE]' role='dimension' type='nominal' />
+  <column caption='Comment Dt Call' datatype='date' name='[COMMENT_DT_CALL]' role='dimension' type='ordinal' />
+  <column caption='Comment Dt Online' datatype='date' name='[COMMENT_DT_ONLINE]' role='dimension' type='ordinal' />
+  <column caption='Crnae3 Dt' datatype='date' name='[CRNAE3_DT]' role='dimension' type='ordinal' />
+  <column caption='Csslca Dt' datatype='date' name='[CSSLCA_DT]' role='dimension' type='ordinal' />
+  <column caption='Curr Comm Cd' datatype='string' name='[CURR_COMM_CD]' role='dimension' type='nominal' />
+  <column caption='Curr Req Chnl' datatype='string' name='[CURR_REQ_CHNL]' role='dimension' type='nominal' />
+  <column caption='Curr Req Dt' datatype='date' name='[CURR_REQ_DT]' role='dimension' type='ordinal' />
+  <column caption='Curr Req Ty' datatype='string' name='[CURR_REQ_TY]' role='dimension' type='nominal' />
+  <column caption='Cvfcmp Dt' datatype='string' name='[CVFCMP_DT]' role='dimension' type='nominal' />
+  <column caption='Cvfnec Dt' datatype='string' name='[CVFNEC_DT]' role='dimension' type='nominal' />
+  <column caption='Close Dt' datatype='datetime' name='[Close_Dt]' role='dimension' type='ordinal' />
+  <column caption='Curr FICO' datatype='integer' name='[Curr_FICO]' role='measure' type='quantitative' />
+  <column caption='Curr FICO Band' datatype='string' name='[Curr_FICO_Band]' role='dimension' type='nominal' />
+  <column caption='Curr LTV' datatype='real' name='[Curr_LTV]' role='measure' type='quantitative' />
+  <column caption='Curr LTV Band' datatype='string' name='[Curr_LTV_Band]' role='dimension' type='nominal' />
+  <column caption='Del Bucket' datatype='string' name='[DEL_BUCKET]' role='dimension' type='nominal' />
+  <column caption='Dfcorn Dt' datatype='date' name='[DFCORN_DT]' role='dimension' type='ordinal' />
+  <column caption='Dfcorn Id' datatype='string' name='[DFCORN_ID]' role='dimension' type='nominal' />
+  <column caption='Dfcrcn Dt' datatype='date' name='[DFCRCN_DT]' role='dimension' type='ordinal' />
+  <column caption='Dfcrd6 Dt' datatype='date' name='[DFCRD6_DT]' role='dimension' type='ordinal' />
+  <column caption='Dfcrd6 Id' datatype='string' name='[DFCRD6_ID]' role='dimension' type='nominal' />
+  <column caption='Dfcrn6 Dt' datatype='date' name='[DFCRN6_DT]' role='dimension' type='ordinal' />
+  <column caption='Dfcrn6 Id' datatype='string' name='[DFCRN6_ID]' role='dimension' type='nominal' />
+  <column caption='Dfcrnd Dt' datatype='date' name='[DFCRND_DT]' role='dimension' type='ordinal' />
+  <column caption='Dfcrnd Id' datatype='string' name='[DFCRND_ID]' role='dimension' type='nominal' />
+  <column caption='Dfcrpf Dt' datatype='string' name='[DFCRPF_DT]' role='dimension' type='nominal' />
+  <column caption='DFCRX3 Dt' datatype='date' name='[DFCRX3_Dt]' role='dimension' type='ordinal' />
+  <column caption='Dfcrx3 Id' datatype='string' name='[DFCRX3_ID]' role='dimension' type='nominal' />
+  <column caption='DFCRX6 Dt' datatype='string' name='[DFCRX6_Dt]' role='dimension' type='nominal' />
+  <column caption='Dfcrx6 Id' datatype='string' name='[DFCRX6_ID]' role='dimension' type='nominal' />
+  <column caption='Dfcurr Dt' datatype='date' name='[DFCURR_DT]' role='dimension' type='ordinal' />
+  <column caption='Dfdelq Dt' datatype='date' name='[DFDELQ_DT]' role='dimension' type='ordinal' />
+  <column caption='DFREIN Dt' datatype='date' name='[DFREIN_Dt]' role='dimension' type='ordinal' />
+  <column caption='Dfrein Id' datatype='string' name='[DFREIN_ID]' role='dimension' type='nominal' />
+  <column caption='Disltm Dt' datatype='date' name='[DISLTM_DT]' role='dimension' type='ordinal' />
+  <column caption='Disman Dt' datatype='date' name='[DISMAN_DT]' role='dimension' type='ordinal' />
+  <column caption='Dpd Bucket' datatype='string' name='[DPD_BUCKET]' role='dimension' type='nominal' />
+  <column caption='Disaster Dt Dlq Status' datatype='string' name='[Disaster_Dt_Dlq_Status]' role='dimension' type='nominal' />
+  <column caption='Extension Count' datatype='integer' name='[Extension_Count]' role='measure' type='quantitative' />
+  <column caption='Fb Plan Lst M' datatype='string' name='[FB_PLAN_LST_M]' role='dimension' type='nominal' />
+  <column caption='Fb Plan Status' datatype='string' name='[FB_PLAN_STATUS]' role='dimension' type='nominal' />
+  <column caption='Fb Req Source' datatype='string' name='[FB_REQ_SOURCE]' role='dimension' type='nominal' />
+  <column caption='Fc Status' datatype='string' name='[FC_STATUS]' role='dimension' type='nominal' />
+  <column caption='Firstcontact' datatype='string' name='[FIRSTCONTACT]' role='dimension' type='nominal' />
+  <column caption='First Time Home Buyer' datatype='integer' name='[FIRST_TIME_HOME_BUYER]' role='measure' type='quantitative' />
+  <column caption='Fp Broken Dt' datatype='string' name='[FP_BROKEN_DT]' role='dimension' type='nominal' />
+  <column caption='Fp Creat Dt' datatype='date' name='[FP_CREAT_DT]' role='dimension' type='ordinal' />
+  <column caption='Fp Fst Pr Du Dt' datatype='date' name='[FP_FST_PR_DU_DT]' role='dimension' type='ordinal' />
+  <column caption='Fp Lst Pr Du Dt' datatype='date' name='[FP_LST_PR_DU_DT]' role='dimension' type='ordinal' />
+  <column caption='Fp Nxt Pr Du Dt' datatype='date' name='[FP_NXT_PR_DU_DT]' role='dimension' type='ordinal' />
+  <column caption='Fp Nxt Pr Du No' datatype='integer' name='[FP_NXT_PR_DU_NO]' role='measure' type='quantitative' />
+  <column caption='Fp Og End Dt' datatype='date' name='[FP_OG_END_DT]' role='dimension' type='ordinal' />
+  <column caption='Fp Og From Dt' datatype='date' name='[FP_OG_FROM_DT]' role='dimension' type='ordinal' />
+  <column caption='Fp Og To Dt' datatype='date' name='[FP_OG_TO_DT]' role='dimension' type='ordinal' />
+  <column caption='Fp Promise Qt' datatype='integer' name='[FP_PROMISE_QT]' role='measure' type='quantitative' />
+  <column caption='Fp Stat Dt' datatype='date' name='[FP_STAT_DT]' role='dimension' type='ordinal' />
+  <column caption='Hhl Grp' datatype='string' name='[HHL_GRP]' role='dimension' type='nominal' />
+  <column caption='Hpcm01 Dt' datatype='date' name='[HPCM01_DT]' role='dimension' type='ordinal' />
+  <column caption='Hpcm01 Id' datatype='string' name='[HPCM01_ID]' role='dimension' type='nominal' />
+  <column caption='Hpcm02 Dt' datatype='date' name='[HPCM02_DT]' role='dimension' type='ordinal' />
+  <column caption='Hpcm02 Id' datatype='string' name='[HPCM02_ID]' role='dimension' type='nominal' />
+  <column caption='Hpcm03 Dt' datatype='date' name='[HPCM03_DT]' role='dimension' type='ordinal' />
+  <column caption='Hpcm03 Id' datatype='string' name='[HPCM03_ID]' role='dimension' type='nominal' />
+  <column caption='Hpnc01 Dt' datatype='date' name='[HPNC01_DT]' role='dimension' type='ordinal' />
+  <column caption='Hpnc01 Id' datatype='string' name='[HPNC01_ID]' role='dimension' type='nominal' />
+  <column caption='Hpnc02 Dt' datatype='date' name='[HPNC02_DT]' role='dimension' type='ordinal' />
+  <column caption='Hpnc02 Id' datatype='string' name='[HPNC02_ID]' role='dimension' type='nominal' />
+  <column caption='Hpnc03 Dt' datatype='date' name='[HPNC03_DT]' role='dimension' type='ordinal' />
+  <column caption='Hpnc03 Id' datatype='string' name='[HPNC03_ID]' role='dimension' type='nominal' />
+  <column caption='Initial Req Dt' datatype='date' name='[INITIAL_REQ_DT]' role='dimension' type='ordinal' />
+  <column caption='Investor Group' datatype='string' name='[INVESTOR_GROUP]' role='dimension' type='nominal' />
+  <column caption='Iv Id' datatype='string' name='[IV_ID]' role='dimension' type='nominal' />
+  <column caption='Iv Nm' datatype='string' name='[IV_NM]' role='dimension' type='nominal' />
+  <column caption='Legacy Company' datatype='string' name='[LEGACY_COMPANY]' role='dimension' type='nominal' />
+  <column caption='Lmcf12 Dt' datatype='string' name='[LMCF12_DT]' role='dimension' type='nominal' />
+  <column caption='Lmcfex Dt' datatype='string' name='[LMCFEX_DT]' role='dimension' type='nominal' />
+  <column caption='Lmcft6 Dt' datatype='string' name='[LMCFT6_DT]' role='dimension' type='nominal' />
+  <column caption='Lmcft9 Dt' datatype='string' name='[LMCFT9_DT]' role='dimension' type='nominal' />
+  <column caption='LMFB01 Dt' datatype='date' name='[LMFB01_Dt]' role='dimension' type='ordinal' />
+  <column caption='LMFB02 Dt' datatype='string' name='[LMFB02_Dt]' role='dimension' type='nominal' />
+  <column caption='LMFB03 Dt' datatype='date' name='[LMFB03_Dt]' role='dimension' type='ordinal' />
+  <column caption='Lmfb03 Id' datatype='string' name='[LMFB03_ID]' role='dimension' type='nominal' />
+  <column caption='LMFB04 Dt' datatype='date' name='[LMFB04_Dt]' role='dimension' type='ordinal' />
+  <column caption='Lmfbae Dt' datatype='string' name='[LMFBAE_DT]' role='dimension' type='nominal' />
+  <column caption='Lmmdrw Dt' datatype='string' name='[LMMDRW_DT]' role='dimension' type='nominal' />
+  <column caption='LMRCRN Dt' datatype='date' name='[LMRCRN_Dt]' role='dimension' type='ordinal' />
+  <column caption='Lmrcrn Id' datatype='string' name='[LMRCRN_ID]' role='dimension' type='nominal' />
+  <column caption='Lm Set Up Dt' datatype='date' name='[LM_SET_UP_DT]' role='dimension' type='ordinal' />
+  <column caption='Lm Status Cd' datatype='string' name='[LM_STATUS_CD]' role='dimension' type='nominal' />
+  <column caption='Lm Status Chg Dt' datatype='date' name='[LM_STATUS_CHG_DT]' role='dimension' type='ordinal' />
+  <column caption='Ln 1St Prin Ba' datatype='real' name='[LN_1ST_PRIN_BA]' role='measure' type='quantitative' />
+  <column caption='Ln Matures Dt' datatype='date' name='[LN_MATURES_DT]' role='dimension' type='ordinal' />
+  <column caption='Ln No' datatype='integer' name='[LN_NO]' role='measure' type='quantitative' />
+  <column caption='Ln Nxt Pmt Due Dt' datatype='date' name='[LN_NXT_PMT_DUE_DT]' role='dimension' type='ordinal' />
+  <column caption='Ln Pif Dt' datatype='date' name='[LN_PIF_DT]' role='dimension' type='ordinal' />
+  <column caption='Long Comm Cd' datatype='string' name='[LONG_COMM_CD]' role='dimension' type='nominal' />
+  <column caption='Ltr Dt' datatype='date' name='[LTR_DT]' role='dimension' type='ordinal' />
+  <column caption='Ltr Id' datatype='string' name='[LTR_ID]' role='dimension' type='nominal' />
+  <column caption='Loan Purpose' datatype='string' name='[Loan_Purpose]' role='dimension' type='nominal' />
+  <column caption='Ndpdfs Dt' datatype='date' name='[NDPDFS_DT]' role='dimension' type='ordinal' />
+  <column caption='Ndpdps Dt' datatype='string' name='[NDPDPS_DT]' role='dimension' type='nominal' />
+  <column caption='Nbr Months Of FB' datatype='integer' name='[Nbr_Months_Of_FB]' role='measure' type='quantitative' />
+  <column caption='Nbr Months Remaining On FB' datatype='integer' name='[Nbr_Months_Remaining_On_FB]' role='measure' type='quantitative' />
+  <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <column caption='Occow Dt' datatype='date' name='[OCCOW_DT]' role='dimension' type='ordinal' />
+  <column caption='Occtn Dt' datatype='date' name='[OCCTN_DT]' role='dimension' type='ordinal' />
+  <column caption='Occvc Dt' datatype='date' name='[OCCVC_DT]' role='dimension' type='ordinal' />
+  <column caption='Origination Channel' datatype='string' name='[Origination_Channel]' role='dimension' type='nominal' />
+  <column caption='Piti' datatype='real' name='[PITI]' role='measure' type='quantitative' />
+  <column caption='Prmnow Dt' datatype='string' name='[PRMNOW_DT]' role='dimension' type='nominal' />
+  <column aggregation='None' caption='Pr Alpha State Cd' datatype='string' name='[PR_ALPHA_STATE_CD]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+  <column aggregation='None' caption='Pr City 2 Nm' datatype='string' name='[PR_CITY_2_NM]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+  <column aggregation='None' caption='Pr Zip Cd' datatype='integer' default-format='*00000' name='[PR_ZIP_CD]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+  <column caption='Rejdef Dt' datatype='string' name='[REJDEF_DT]' role='dimension' type='nominal' />
+  <column caption='Rppcrn Dt' datatype='date' name='[RPPCRN_DT]' role='dimension' type='ordinal' />
+  <column caption='Rppcrn Id' datatype='string' name='[RPPCRN_ID]' role='dimension' type='nominal' />
+  <column caption='Rs385 Dt' datatype='date' name='[RS385_DT]' role='dimension' type='ordinal' />
+  <column caption='Sl385 Dt' datatype='date' name='[SL385_DT]' role='dimension' type='ordinal' />
+  <column caption='Sys Del Dt' datatype='string' name='[SYS_DEL_DT]' role='dimension' type='nominal' />
+  <column caption='Sys Ins Dt' datatype='datetime' name='[SYS_INS_DT]' role='dimension' type='ordinal' />
+  <column caption='Sys Upd Dt' datatype='string' name='[SYS_UPD_DT]' role='dimension' type='nominal' />
+  <column caption='Self Emp Flag' datatype='integer' name='[Self_Emp_Flag]' role='measure' type='quantitative' />
+  <column caption='Total Months On Fb' datatype='integer' name='[TOTAL_MONTHS_ON_FB]' role='measure' type='quantitative' />
+  <column caption='Tsk Act Close Dt' datatype='date' name='[TSK_ACT_CLOSE_DT]' role='dimension' type='ordinal' />
+  <column caption='Tsk Cont Id' datatype='string' name='[TSK_CONT_ID]' role='dimension' type='nominal' />
+  <column caption='Tsk Id' datatype='string' name='[TSK_ID]' role='dimension' type='nominal' />
+  <column caption='Tsk Start Dt' datatype='date' name='[TSK_START_DT]' role='dimension' type='ordinal' />
+  <extract count='-1' enabled='true' units='records'>
+    <connection authentication='auth-username-password' class='hyper' dbname='extract/05/6c/{B241FF0B-81BC-4160-88F8-EA2E03A2520D}/federated_1rhrjze00j1w0d133w2w90.hyper' default-settings='yes' extract-engine='true' management-tablespace='extracts' port='8884' schema='Extract' server='dev-tabapp02' tablename='Extract' update-time='08/28/2020 04:24:48 PM' username='tableau_internal_user'>
+      <relation name='Extract' table='[Extract].[Extract]' type='table' />
+      <refresh>
+        <refresh-event add-from-file-path='Forbearance_hST_Curr' increment-value='%null%' refresh-type='create' rows-inserted='53373' timestamp-start='2020-08-28 16:24:48.797' />
+      </refresh>
+      <metadata-records>
+        <metadata-record class='column'>
+          <remote-name>AS_OF_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[AS_OF_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>AS_OF_DT</remote-alias>
+          <ordinal>0</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LN_NO</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[LN_NO]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LN_NO</remote-alias>
+          <ordinal>1</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>53373</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LEGACY_COMPANY</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LEGACY_COMPANY]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LEGACY_COMPANY</remote-alias>
+          <ordinal>2</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>ACCOMODATION_TYPE</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[ACCOMODATION_TYPE]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>ACCOMODATION_TYPE</remote-alias>
+          <ordinal>3</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRD6_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFCRD6_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRD6_DT</remote-alias>
+          <ordinal>4</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>326</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRN6_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFCRN6_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRN6_DT</remote-alias>
+          <ordinal>5</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>502</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRND_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFCRND_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRND_DT</remote-alias>
+          <ordinal>6</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>262</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCORN_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFCORN_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCORN_DT</remote-alias>
+          <ordinal>7</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>211</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>INITIAL_REQ_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[INITIAL_REQ_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>INITIAL_REQ_DT</remote-alias>
+          <ordinal>8</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>326</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CURR_COMM_CD</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[CURR_COMM_CD]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CURR_COMM_CD</remote-alias>
+          <ordinal>9</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>31</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CURR_REQ_TY</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[CURR_REQ_TY]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CURR_REQ_TY</remote-alias>
+          <ordinal>10</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CURR_REQ_CHNL</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[CURR_REQ_CHNL]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CURR_REQ_CHNL</remote-alias>
+          <ordinal>11</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CURR_REQ_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[CURR_REQ_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CURR_REQ_DT</remote-alias>
+          <ordinal>12</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>239</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CFBREJ_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[CFBREJ_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CFBREJ_DT</remote-alias>
+          <ordinal>13</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>282</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>INVESTOR_GROUP</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[INVESTOR_GROUP]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>INVESTOR_GROUP</remote-alias>
+          <ordinal>14</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>6</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LN_1ST_PRIN_BA</remote-name>
+          <remote-type>5</remote-type>
+          <local-name>[LN_1ST_PRIN_BA]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LN_1ST_PRIN_BA</remote-alias>
+          <ordinal>15</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>real</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>49354</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DEL_BUCKET</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DEL_BUCKET]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DEL_BUCKET</remote-alias>
+          <ordinal>16</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FC_STATUS</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[FC_STATUS]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FC_STATUS</remote-alias>
+          <ordinal>17</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>3</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>BK_STATUS</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[BK_STATUS]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>BK_STATUS</remote-alias>
+          <ordinal>18</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DPD_BUCKET</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DPD_BUCKET]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DPD_BUCKET</remote-alias>
+          <ordinal>19</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>5</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LM_STATUS_CD</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LM_STATUS_CD]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LM_STATUS_CD</remote-alias>
+          <ordinal>20</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LM_STATUS_CHG_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LM_STATUS_CHG_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LM_STATUS_CHG_DT</remote-alias>
+          <ordinal>21</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>198</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LM_SET_UP_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LM_SET_UP_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LM_SET_UP_DT</remote-alias>
+          <ordinal>22</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>231</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FB_PLAN_STATUS</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[FB_PLAN_STATUS]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FB_PLAN_STATUS</remote-alias>
+          <ordinal>23</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_CREAT_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[FP_CREAT_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_CREAT_DT</remote-alias>
+          <ordinal>24</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>171</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_STAT_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[FP_STAT_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_STAT_DT</remote-alias>
+          <ordinal>25</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>150</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_BROKEN_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[FP_BROKEN_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_BROKEN_DT</remote-alias>
+          <ordinal>26</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>7</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_PROMISE_QT</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[FP_PROMISE_QT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_PROMISE_QT</remote-alias>
+          <ordinal>27</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>6</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_FST_PR_DU_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[FP_FST_PR_DU_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_FST_PR_DU_DT</remote-alias>
+          <ordinal>28</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>8</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_LST_PR_DU_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[FP_LST_PR_DU_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_LST_PR_DU_DT</remote-alias>
+          <ordinal>29</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>9</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_NXT_PR_DU_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[FP_NXT_PR_DU_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_NXT_PR_DU_DT</remote-alias>
+          <ordinal>30</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>8</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_NXT_PR_DU_NO</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[FP_NXT_PR_DU_NO]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_NXT_PR_DU_NO</remote-alias>
+          <ordinal>31</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>7</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_OG_END_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[FP_OG_END_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_OG_END_DT</remote-alias>
+          <ordinal>32</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>223</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_OG_FROM_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[FP_OG_FROM_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_OG_FROM_DT</remote-alias>
+          <ordinal>33</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>48</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FP_OG_TO_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[FP_OG_TO_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FP_OG_TO_DT</remote-alias>
+          <ordinal>34</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>12</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LTR_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LTR_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LTR_ID</remote-alias>
+          <ordinal>35</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LTR_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LTR_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LTR_DT</remote-alias>
+          <ordinal>36</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>26</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>ACCRUAL_STATUS</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[ACCRUAL_STATUS]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>ACCRUAL_STATUS</remote-alias>
+          <ordinal>37</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>PR_ALPHA_STATE_CD</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[PR_ALPHA_STATE_CD]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>PR_ALPHA_STATE_CD</remote-alias>
+          <ordinal>38</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>54</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>PR_ZIP_CD</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[PR_ZIP_CD]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>PR_ZIP_CD</remote-alias>
+          <ordinal>39</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>9087</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>PR_CITY_2_NM</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[PR_CITY_2_NM]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>PR_CITY_2_NM</remote-alias>
+          <ordinal>40</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4341</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LN_NXT_PMT_DUE_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LN_NXT_PMT_DUE_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LN_NXT_PMT_DUE_DT</remote-alias>
+          <ordinal>41</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>41</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>IV_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[IV_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>IV_ID</remote-alias>
+          <ordinal>42</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>172</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>IV_NM</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[IV_NM]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>IV_NM</remote-alias>
+          <ordinal>43</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>11</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>ACC_DPD_BUCKET</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[ACC_DPD_BUCKET]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>ACC_DPD_BUCKET</remote-alias>
+          <ordinal>44</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>5</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>ACC_DPD_BUCKET_2</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[ACC_DPD_BUCKET_2]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>ACC_DPD_BUCKET_2</remote-alias>
+          <ordinal>45</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>6</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FB_PLAN_LST_M</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[FB_PLAN_LST_M]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FB_PLAN_LST_M</remote-alias>
+          <ordinal>46</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>19</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>ASSISTANCE_STAGE</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[ASSISTANCE_STAGE]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>ASSISTANCE_STAGE</remote-alias>
+          <ordinal>47</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>24</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FIRSTCONTACT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[FIRSTCONTACT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FIRSTCONTACT</remote-alias>
+          <ordinal>48</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LONG_COMM_CD</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LONG_COMM_CD]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LONG_COMM_CD</remote-alias>
+          <ordinal>49</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>10</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>COMMENT_CD_ONLINE</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[COMMENT_CD_ONLINE]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>COMMENT_CD_ONLINE</remote-alias>
+          <ordinal>50</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>3</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>COMMENT_DT_ONLINE</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[COMMENT_DT_ONLINE]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>COMMENT_DT_ONLINE</remote-alias>
+          <ordinal>51</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>343</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>COMMENT_CD_CALL</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[COMMENT_CD_CALL]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>COMMENT_CD_CALL</remote-alias>
+          <ordinal>52</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>3</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>COMMENT_DT_CALL</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[COMMENT_DT_CALL]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>COMMENT_DT_CALL</remote-alias>
+          <ordinal>53</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>270</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FB_REQ_SOURCE</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[FB_REQ_SOURCE]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FB_REQ_SOURCE</remote-alias>
+          <ordinal>54</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>3</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Curr_LTV</remote-name>
+          <remote-type>5</remote-type>
+          <local-name>[Curr_LTV]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Curr_LTV</remote-alias>
+          <ordinal>55</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>real</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>49527</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Curr_LTV_Band</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Curr_LTV_Band]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Curr_LTV_Band</remote-alias>
+          <ordinal>56</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Vintage</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[Vintage]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Vintage</remote-alias>
+          <ordinal>57</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>28</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Close_Dt</remote-name>
+          <remote-type>135</remote-type>
+          <local-name>[Close_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Close_Dt</remote-alias>
+          <ordinal>58</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>datetime</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>6898</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Curr_FICO</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[Curr_FICO]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Curr_FICO</remote-alias>
+          <ordinal>59</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>696</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Curr_FICO_Band</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Curr_FICO_Band]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Curr_FICO_Band</remote-alias>
+          <ordinal>60</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>3</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>FIRST_TIME_HOME_BUYER</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[FIRST_TIME_HOME_BUYER]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>FIRST_TIME_HOME_BUYER</remote-alias>
+          <ordinal>61</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Self_Emp_Flag</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[Self_Emp_Flag]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Self_Emp_Flag</remote-alias>
+          <ordinal>62</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Occupation</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Occupation]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Occupation</remote-alias>
+          <ordinal>63</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>6560</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Income</remote-name>
+          <remote-type>5</remote-type>
+          <local-name>[Income]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Income</remote-alias>
+          <ordinal>64</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>real</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>14170</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>ASSET</remote-name>
+          <remote-type>5</remote-type>
+          <local-name>[ASSET]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>ASSET</remote-alias>
+          <ordinal>65</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>real</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>12988</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>PITI</remote-name>
+          <remote-type>5</remote-type>
+          <local-name>[PITI]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>PITI</remote-alias>
+          <ordinal>66</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>real</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>50698</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Product2</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Product2]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Product2</remote-alias>
+          <ordinal>67</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HHL_GRP</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[HHL_GRP]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HHL_GRP</remote-alias>
+          <ordinal>68</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>36</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Origination_Channel</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Origination_Channel]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Origination_Channel</remote-alias>
+          <ordinal>69</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>5</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Loan_Purpose</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Loan_Purpose]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Loan_Purpose</remote-alias>
+          <ordinal>70</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>9</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CBSA_NoDiv</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[CBSA_NoDiv]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CBSA_NoDiv</remote-alias>
+          <ordinal>71</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>748</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LN_PIF_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LN_PIF_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LN_PIF_DT</remote-alias>
+          <ordinal>72</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>216</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LN_MATURES_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LN_MATURES_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LN_MATURES_DT</remote-alias>
+          <ordinal>73</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>833</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Disaster_Dt_Dlq_Status</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Disaster_Dt_Dlq_Status]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Disaster_Dt_Dlq_Status</remote-alias>
+          <ordinal>74</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Accomodation_Granted</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[Accomodation_Granted]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Accomodation_Granted</remote-alias>
+          <ordinal>75</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>BO_BORR_FST_NM</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[BO_BORR_FST_NM]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>BO_BORR_FST_NM</remote-alias>
+          <ordinal>76</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4422</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>BO_BORR_LAST_NM</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[BO_BORR_LAST_NM]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>BO_BORR_LAST_NM</remote-alias>
+          <ordinal>77</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>9984</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>BO_BORR_MDL_NM</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[BO_BORR_MDL_NM]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>BO_BORR_MDL_NM</remote-alias>
+          <ordinal>78</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>880</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>TSK_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[TSK_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>TSK_ID</remote-alias>
+          <ordinal>79</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>2</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>TSK_START_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[TSK_START_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>TSK_START_DT</remote-alias>
+          <ordinal>80</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>75</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>TSK_ACT_CLOSE_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[TSK_ACT_CLOSE_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>TSK_ACT_CLOSE_DT</remote-alias>
+          <ordinal>81</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>TSK_CONT_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[TSK_CONT_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>TSK_CONT_ID</remote-alias>
+          <ordinal>82</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>6</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFREIN_Dt</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFREIN_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFREIN_Dt</remote-alias>
+          <ordinal>83</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>283</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRX3_Dt</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFCRX3_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRX3_Dt</remote-alias>
+          <ordinal>84</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>191</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRX6_Dt</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFCRX6_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRX6_Dt</remote-alias>
+          <ordinal>85</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>28</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMRCRN_Dt</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LMRCRN_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMRCRN_Dt</remote-alias>
+          <ordinal>86</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>200</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMFB01_Dt</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LMFB01_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMFB01_Dt</remote-alias>
+          <ordinal>87</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>352</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMFB02_Dt</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMFB02_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMFB02_Dt</remote-alias>
+          <ordinal>88</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>28</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMFB03_Dt</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LMFB03_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMFB03_Dt</remote-alias>
+          <ordinal>89</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>427</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMFB04_Dt</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[LMFB04_Dt]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMFB04_Dt</remote-alias>
+          <ordinal>90</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>193</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPNC01_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[HPNC01_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPNC01_DT</remote-alias>
+          <ordinal>91</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>55</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPNC02_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[HPNC02_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPNC02_DT</remote-alias>
+          <ordinal>92</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>58</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPNC03_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[HPNC03_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPNC03_DT</remote-alias>
+          <ordinal>93</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>38</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPCM01_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[HPCM01_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPCM01_DT</remote-alias>
+          <ordinal>94</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>170</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPCM02_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[HPCM02_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPCM02_DT</remote-alias>
+          <ordinal>95</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>582</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPCM03_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[HPCM03_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPCM03_DT</remote-alias>
+          <ordinal>96</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>15</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCURR_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFCURR_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCURR_DT</remote-alias>
+          <ordinal>97</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>290</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFDELQ_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFDELQ_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFDELQ_DT</remote-alias>
+          <ordinal>98</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>280</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CRNAE3_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[CRNAE3_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CRNAE3_DT</remote-alias>
+          <ordinal>99</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>5</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CSSLCA_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[CSSLCA_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CSSLCA_DT</remote-alias>
+          <ordinal>100</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>10</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DISLTM_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DISLTM_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DISLTM_DT</remote-alias>
+          <ordinal>101</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DISMAN_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DISMAN_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DISMAN_DT</remote-alias>
+          <ordinal>102</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>119</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>OCCOW_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[OCCOW_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>OCCOW_DT</remote-alias>
+          <ordinal>103</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>255</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>OCCTN_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[OCCTN_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>OCCTN_DT</remote-alias>
+          <ordinal>104</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>368</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>OCCVC_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[OCCVC_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>OCCVC_DT</remote-alias>
+          <ordinal>105</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>1027</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>PRMNOW_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[PRMNOW_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>PRMNOW_DT</remote-alias>
+          <ordinal>106</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>7</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>REJDEF_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[REJDEF_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>REJDEF_DT</remote-alias>
+          <ordinal>107</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>RPPCRN_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[RPPCRN_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>RPPCRN_DT</remote-alias>
+          <ordinal>108</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>270</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>RS385_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[RS385_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>RS385_DT</remote-alias>
+          <ordinal>109</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>7</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>SL385_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[SL385_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>SL385_DT</remote-alias>
+          <ordinal>110</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>210</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CFBREJ_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[CFBREJ_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CFBREJ_ID</remote-alias>
+          <ordinal>111</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>446</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRD6_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFCRD6_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRD6_ID</remote-alias>
+          <ordinal>112</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRN6_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFCRN6_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRN6_ID</remote-alias>
+          <ordinal>113</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>130</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRND_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFCRND_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRND_ID</remote-alias>
+          <ordinal>114</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>10</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCORN_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFCORN_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCORN_ID</remote-alias>
+          <ordinal>115</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>175</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFREIN_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFREIN_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFREIN_ID</remote-alias>
+          <ordinal>116</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>671</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRX3_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFCRX3_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRX3_ID</remote-alias>
+          <ordinal>117</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>203</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRX6_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFCRX6_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRX6_ID</remote-alias>
+          <ordinal>118</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>28</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPNC01_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[HPNC01_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPNC01_ID</remote-alias>
+          <ordinal>119</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>95</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPNC02_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[HPNC02_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPNC02_ID</remote-alias>
+          <ordinal>120</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>151</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPNC03_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[HPNC03_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPNC03_ID</remote-alias>
+          <ordinal>121</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>55</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPCM01_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[HPCM01_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPCM01_ID</remote-alias>
+          <ordinal>122</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>124</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPCM02_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[HPCM02_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPCM02_ID</remote-alias>
+          <ordinal>123</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>39</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>HPCM03_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[HPCM03_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>HPCM03_ID</remote-alias>
+          <ordinal>124</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>15</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMFB03_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMFB03_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMFB03_ID</remote-alias>
+          <ordinal>125</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>427</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMRCRN_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMRCRN_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMRCRN_ID</remote-alias>
+          <ordinal>126</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>301</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>RPPCRN_ID</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[RPPCRN_ID]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>RPPCRN_ID</remote-alias>
+          <ordinal>127</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>270</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Extension_Count</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[Extension_Count]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Extension_Count</remote-alias>
+          <ordinal>128</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>4</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Nbr_Months_Of_FB</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[Nbr_Months_Of_FB]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Nbr_Months_Of_FB</remote-alias>
+          <ordinal>129</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>8</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>Nbr_Months_Remaining_On_FB</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[Nbr_Months_Remaining_On_FB]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>Nbr_Months_Remaining_On_FB</remote-alias>
+          <ordinal>130</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>8</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>TOTAL_MONTHS_ON_FB</remote-name>
+          <remote-type>20</remote-type>
+          <local-name>[TOTAL_MONTHS_ON_FB]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>TOTAL_MONTHS_ON_FB</remote-alias>
+          <ordinal>131</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>integer</local-type>
+          <aggregation>Sum</aggregation>
+          <approx-count>8</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>SYS_INS_DT</remote-name>
+          <remote-type>135</remote-type>
+          <local-name>[SYS_INS_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>SYS_INS_DT</remote-alias>
+          <ordinal>132</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>datetime</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>SYS_UPD_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[SYS_UPD_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>SYS_UPD_DT</remote-alias>
+          <ordinal>133</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>SYS_DEL_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[SYS_DEL_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>SYS_DEL_DT</remote-alias>
+          <ordinal>134</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CVFCMP_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[CVFCMP_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CVFCMP_DT</remote-alias>
+          <ordinal>135</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMCF12_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMCF12_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMCF12_DT</remote-alias>
+          <ordinal>136</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMCFT9_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMCFT9_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMCFT9_DT</remote-alias>
+          <ordinal>137</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>CVFNEC_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[CVFNEC_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>CVFNEC_DT</remote-alias>
+          <ordinal>138</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRPF_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[DFCRPF_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRPF_DT</remote-alias>
+          <ordinal>139</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMCFEX_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMCFEX_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMCFEX_DT</remote-alias>
+          <ordinal>140</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMCFT6_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMCFT6_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMCFT6_DT</remote-alias>
+          <ordinal>141</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMFBAE_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMFBAE_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMFBAE_DT</remote-alias>
+          <ordinal>142</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>LMMDRW_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[LMMDRW_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>LMMDRW_DT</remote-alias>
+          <ordinal>143</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>NDPDPS_DT</remote-name>
+          <remote-type>129</remote-type>
+          <local-name>[NDPDPS_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>NDPDPS_DT</remote-alias>
+          <ordinal>144</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>string</local-type>
+          <aggregation>Count</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+          <collation flag='0' name='LEN_RUS' />
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>NDPDFS_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[NDPDFS_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>NDPDFS_DT</remote-alias>
+          <ordinal>145</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>1</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+        <metadata-record class='column'>
+          <remote-name>DFCRCN_DT</remote-name>
+          <remote-type>133</remote-type>
+          <local-name>[DFCRCN_DT]</local-name>
+          <parent-name>[Extract]</parent-name>
+          <remote-alias>DFCRCN_DT</remote-alias>
+          <ordinal>146</ordinal>
+          <family>Forbearance_hST_Curr.txt</family>
+          <local-type>date</local-type>
+          <aggregation>Year</aggregation>
+          <approx-count>71</approx-count>
+          <contains-null>true</contains-null>
+        </metadata-record>
+      </metadata-records>
+    </connection>
+  </extract>
+  <layout dim-ordering='alphabetic' dim-percentage='0.556675' measure-ordering='alphabetic' measure-percentage='0.443325' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+  </semantic-values>
+</datasource>

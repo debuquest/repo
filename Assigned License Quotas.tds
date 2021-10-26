@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.1210.2209                               -->
+<datasource formatted-name='EDOBIMetrics.Assigned_License_Quotas' inline='true' source-platform='win' version='18.1' xml:base='https://bbttabdev.bbtnet.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='AssignedLicenseQuotas' path='/t/DEV_Mortgage/datasources' revision='1.0' site='DEV_Mortgage' />
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='DEV-SH1SQL01,5533' name='sqlserver.000i1yi12pcwka1dg7ans13db87a'>
+        <connection authentication='sqlserver' class='sqlserver' dbname='EDOBIMetrics' odbc-native-protocol='yes' one-time-sql='' server='DEV-SH1SQL01,5533' username='edobiadm714669' />
+      </named-connection>
+    </named-connections>
+    <relation connection='sqlserver.000i1yi12pcwka1dg7ans13db87a' name='Custom SQL Query' type='text'>select * &#13;&#10;from tableau.assigned_license_quotas&#13;&#10;where create_date = &#13;&#10;(select max(create_date) &#13;&#10;from tableau.assigned_license_quotas)</relation>
+    <metadata-records>
+      <metadata-record class='column'>
+        <remote-name>environment</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[environment]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>environment</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>32</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>key_name</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[key_name]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>key_name</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>16</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>product_name</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[product_name]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>product_name</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>64</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>user_name</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[user_name]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>user_name</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>128</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>assigned_email</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[assigned_email]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>assigned_email</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>128</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>department</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[department]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>department</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>128</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>customer_id</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[customer_id]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>customer_id</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>128</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>license_count</remote-name>
+        <remote-type>3</remote-type>
+        <local-name>[license_count]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>license_count</remote-alias>
+        <ordinal>8</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>10</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>customer_notes</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[customer_notes]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>customer_notes</remote-alias>
+        <ordinal>9</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>255</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>create_date</remote-name>
+        <remote-type>7</remote-type>
+        <local-name>[create_date]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>create_date</remote-alias>
+        <ordinal>10</ordinal>
+        <local-type>datetime</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>create_user</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[create_user]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>create_user</remote-alias>
+        <ordinal>11</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>255</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>update_date</remote-name>
+        <remote-type>7</remote-type>
+        <local-name>[update_date]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>update_date</remote-alias>
+        <ordinal>12</ordinal>
+        <local-type>datetime</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>update_user</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[update_user]</local-name>
+        <parent-name>[Custom SQL Query]</parent-name>
+        <remote-alias>update_user</remote-alias>
+        <ordinal>13</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>255</width>
+        <contains-null>true</contains-null>
+        <padded-semantics>true</padded-semantics>
+        <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+        </attributes>
+      </metadata-record>
+    </metadata-records>
+  </connection>
+  <aliases enabled='yes' />
+  <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <column caption='assigned email' datatype='string' name='[assigned_email]' role='dimension' type='nominal' />
+  <column datatype='datetime' hidden='true' name='[create_date]' role='dimension' type='ordinal' />
+  <column datatype='string' hidden='true' name='[create_user]' role='dimension' type='nominal' />
+  <column caption='site name' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+  <column caption='customer notes' datatype='string' name='[customer_notes]' role='dimension' type='nominal' />
+  <column caption='cost center' datatype='string' name='[department]' role='dimension' type='nominal' />
+  <column caption='key name' datatype='string' hidden='true' name='[key_name]' role='dimension' type='nominal' />
+  <column caption='license count' datatype='integer' name='[license_count]' role='measure' type='quantitative' />
+  <column caption='product name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+  <column datatype='datetime' hidden='true' name='[update_date]' role='dimension' type='ordinal' />
+  <column datatype='string' hidden='true' name='[update_user]' role='dimension' type='nominal' />
+  <column caption='user name' datatype='string' name='[user_name]' role='dimension' type='nominal' />
+  <layout dim-ordering='alphabetic' dim-percentage='0.615245' measure-ordering='alphabetic' measure-percentage='0.384755' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+  </semantic-values>
+  <filter class='categorical' column='[customer_id]' filter-group='2'>
+    <groupfilter function='member' level='[customer_id]' member='&quot;Mortgage&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+  </filter>
+</datasource>
